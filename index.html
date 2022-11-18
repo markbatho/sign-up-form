@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <img src="./images/odin-lined.png" alt="Odin Project logo">
+      <h1>Odin</h1>
+    </div>
+    <div>
+      Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </div>
+  </aside>
+  <main>
+    <header>
+      <h2>
+        This is not a real online service! You know you
+        need something like this in your life to help
+        realize your deepest dreams. <br>
+        Sign up <i>now</i> to get started.
+      </h2>
+      <h2>You <i>know</i> you want to.</h2>
+    </header>
+    <form>
+      <div class="form-wrapper">
+        <h3>Let's do this</h3>
+        <div class="form-fields">
+          <div class="form-col">
+            <div class="form-row">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first_name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                minlength="6"
+                maxlength="24"
+              >
+              <span id="error"></span>
+            </div>
+          </div>
+          <div class="form-col">
+            <div class="form-row">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="last_name" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-row">
+              <label for="confirm-password">Confirm password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm_password"
+                required
+                minlength="6"
+                maxlength="24"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-footer">
+        <button>Create Account</button>
+        <span>Already have an account? <a href="#">Log in</a></span>
+      </div>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
